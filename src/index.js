@@ -5,7 +5,8 @@ import '../styles.scss';
 const App = () => {
     return (
         <div>
-            <h2>See you space Cowboy</h2>
+            <h2>Feather & Ash</h2>
+            <h3>Production Company</h3>
         </div>
     );
 }
