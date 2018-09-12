@@ -1,14 +1,14 @@
 import React from 'react';
 import { render } from 'react-dom';
+import App from './Components/App';
 import '../styles.scss';
 
-const App = () => {
+const Main = () => {
     return (
         <div>
-            <h2>Feather & Ash</h2>
-            <h3>Production Company</h3>
+            <App />
         </div>
     );
 }
 
-render(<App />, document.getElementById('app'));
+render(<Main />, document.getElementById('app'));
