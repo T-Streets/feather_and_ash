@@ -6,7 +6,7 @@ const Nav = () => {
             <ul className='container'>
                 <li className='logo'>Logo</li>
                 <li>Portfolio</li>
-                <li>About</li>
+                <li>Contact</li>
             </ul>
         </nav>
     )
