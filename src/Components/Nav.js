@@ -4,7 +4,7 @@ const Nav = () => {
     return (
         <nav>
             <ul className='container'>
-                <li>Logo</li>
+                <li className='logo'>Logo</li>
                 <li>Portfolio</li>
                 <li>About</li>
             </ul>

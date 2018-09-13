@@ -1,12 +1,7 @@
 body {
-    background-color:rgb(22, 26, 29);
-    color: yellow;
+    background-color:rgb(243, 243, 243);
+    color: black;
     font-size: 16px;
-    // font-family: 'Nanum Gothic', sans-serif;
-}
-
-h2, h3 {
-    text-align: center;
 }
 
 nav {
@@ -30,9 +25,18 @@ nav ul {
 }
 
 nav li {
-    color: aquamarine;
+    color: crimson;
     display: block;
     padding: 10px;
     text-transform: capitalize;
-    font-family: 'Nanum Gothic', sans-serif
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.2em;
+}
+
+nav li:hover {
+    color: black;
+}
+
+.logo {
+    margin-right: auto;
 }
