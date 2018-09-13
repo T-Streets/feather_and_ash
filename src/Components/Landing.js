@@ -3,8 +3,9 @@ import Feather from '../../images/feather-logo.png'
 
 const Landing = () => {
     return (
-        <div className='imgContainer'>
-            <img className='feather' src={Feather} />
+        <div className='landingContainer'>
+            <h1>Feather & Ash</h1>
+            <h2>Productions</h2>
         </div>
     )
 }
