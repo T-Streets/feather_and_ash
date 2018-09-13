@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import Nav from './Nav';
+import Landing from './Landing';
 
 export default class App extends Component {
     constructor() {
         super()
 
         this.state = {
-            navBarVisible: true,
+            navBarVisible: false,
         }
     }
 
@@ -31,7 +32,8 @@ export default class App extends Component {
         return(
             <div>
                 {this.state.navBarVisible ? <Nav /> : null}
-                <p></p>
+                <Landing />
+                
             </div>
         )
     }

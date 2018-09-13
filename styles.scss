@@ -40,3 +40,13 @@ nav li:hover {
 .logo {
     margin-right: auto;
 }
+
+.imgContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.feather {
+    transform: translate(-50%, -50%);
+}
