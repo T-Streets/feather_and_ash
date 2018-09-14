@@ -7,6 +7,7 @@ const Nav = () => {
                 <li className='logo'>Logo</li>
                 <li>Portfolio</li>
                 <li>Contact</li>
+                <li>Quote</li>
             </ul>
         </nav>
     )

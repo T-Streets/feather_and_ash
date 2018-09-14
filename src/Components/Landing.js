@@ -1,10 +1,11 @@
 import React from 'react';
-import Feather from '../../images/feather-logo.png'
+import Feather from '../../images/feather-transparent.png'
 
 const Landing = () => {
     return (
         <div className='landingContainer'>
-            <h1>Feather & Ash</h1>
+            <img src={Feather}/>
+            <h1>Feather <span>&</span> Ash</h1>
             <h2>Productions</h2>
         </div>
     )
