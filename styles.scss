@@ -1,9 +1,10 @@
 $main-bg-color: rgb(235, 235, 235);
 $nav-color: white;
-$r-color: crimson;
+$r-color: rgb(201, 4, 43);
+$r-color-shadow: rgb(133, 17, 17);
 $nav-font: 'Nanum Gothic', sans-serif; 
 $h-font: 'Cinzel', serif;
-$text-font: 'Raleway', sans-serif;
+$text-font: 'Quicksand', sans-serif;
 
 
 
@@ -41,7 +42,7 @@ nav li {
     display: block;
     padding: 10px;
     text-transform: capitalize;
-    font-family: $nav-font;
+    font-family: $text-font;
     font-size: 1.2em;
 }
 
@@ -89,7 +90,7 @@ h2 {
     font-weight: lighter;
 }
 
-span {
+.ampersand {
     font-size: .8em;
     color: crimson;
 }
@@ -102,12 +103,45 @@ span {
     font-size: 1.5em;
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 200px;
 
+    .brand {
+        font-family: $h-font;
+    }
     hr {
         border: 0;
     height: 2px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(204, 36, 36, 0.75), rgba(0, 0, 0, 0));
     margin-bottom: 70px;
 
+    }
+
+    .quoteButton {
+        outline: none;
+        border: none;
+        cursor: pointer;
+        display: block;
+        position: relative;
+        background-color: $r-color;
+        color: $main-bg-color;
+        font-size: 20px;
+        font-weight: 300px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: $h-font;
+        padding: 15px 40px;
+        margin: 0 auto;
+        border-radius: 15px;
+        box-shadow: 0 6px $r-color-shadow;
+    }
+
+    .quoteButton:hover {
+        box-shadow: 0 4px $r-color-shadow;
+        top: 2px;
+    }
+
+    .quoteButton:active {
+        box-shadow: none;
+        top: 6px;
     }
 }
