@@ -1,7 +1,7 @@
 $main-bg-color: rgb(235, 235, 235);
 $nav-color: white;
-$r-color: rgb(201, 4, 43);
-$r-color-shadow: rgb(133, 17, 17);
+$r-color: rgb(128, 2, 27);
+$r-color-shadow: rgb(43, 0, 0);
 $nav-font: 'Nanum Gothic', sans-serif; 
 $h-font: 'Cinzel', serif;
 $text-font: 'Quicksand', sans-serif;
@@ -61,7 +61,7 @@ nav li:hover {
     height: 350px;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 400px;
+    padding-top: 500px;
 }
 
 h1 {
@@ -96,11 +96,12 @@ h2 {
 }
 
 .aboutContainer {
-    background-color: $main-bg-color;
-    color: black;
-    height: 200px;
+    background-image: url('./src/images/black-background1.jpg');
+    background-size: cover;
+    color:$main-bg-color;
+    height: 300px;
     font-family: $text-font;
-    font-size: 1.5em;
+    font-size: 1.7em;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 200px;
@@ -112,7 +113,7 @@ h2 {
         border: 0;
     height: 2px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(204, 36, 36, 0.75), rgba(0, 0, 0, 0));
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 
     }
 
