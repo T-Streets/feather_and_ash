@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Nav from './Nav';
 import Landing from './Landing';
+import About from './About';
 
 export default class App extends Component {
     constructor() {
@@ -34,6 +35,7 @@ export default class App extends Component {
                 {this.state.navBarVisible ? <Nav /> : null}
                 
                 <Landing />
+                <About />
             </div>
         )
     }
