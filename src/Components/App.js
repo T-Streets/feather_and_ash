@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Nav from './Nav';
 import Landing from './Landing';
 import About from './About';
+import Portfolio from './Portfolio';
 
 export default class App extends Component {
     constructor() {
@@ -36,6 +37,7 @@ export default class App extends Component {
                 
                 <Landing />
                 <About />
+                <Portfolio />
             </div>
         )
     }
