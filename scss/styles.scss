@@ -17,8 +17,8 @@ nav {
     height: 80px;
     box-sizing: border-box;
     background: $nav-color;
-    opacity: 0.8;
-    filter: alpha(opacity=80);
+    opacity: 0.9;
+    filter: alpha(opacity=90);
     z-index: 99999;
 
     a {
@@ -115,6 +115,10 @@ h1 {
 
     }
 
+    a {
+        text-decoration: none;
+    }
+
     .quoteButton {
         outline: none;
         border: none;
@@ -186,6 +190,10 @@ h1 {
         text-align: center;
         font-family: $h-font;
         font-size: 2em;
+    }
+
+    a {
+        text-decoration: none;
     }
 
     width: 50%;

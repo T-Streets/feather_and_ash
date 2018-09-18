@@ -12,24 +12,38 @@ export default class Form extends Component {
         }
     }
 
+    handleChange = e => {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    }
+    
+    handleSubmit = e => {
+        e.preventDefault()
+
+        const { firstName, lastName, email, message } = this.state
+    }
+
     render() {
         return(
             <div>
                 <div className='formContainer' id='form'>
                     <h3>Request a Quote</h3>
                     <hr />
-                    <form>
+                    <form onSubmit={this.handleSubmit}>
                         <label>First Name</label>
-                        <input type='text' name='firstname' />
+                        <input type='text' name='firstName' onChange={this.handleChange} />
                         
                         <label>Last Name</label>
-                        <input type='text' name='lastname' />
+                        <input type='text' name='lastName' onChange={this.handleChange} />
                         
                         <label>Email</label>
-                        <input type='text' name='email' />
+                        <input type='text' name='email' onChange={this.handleChange} />
                         
                         <label>Brief Description</label>
-                        <textarea name='message' placeholder='Please provide a brief description of your idea...' />
+                        <textarea name='message' placeholder='Please provide a brief description of your idea...' 
+                        onChange={this.handleChange} 
+                        />
 
                         <input type='submit' value='Submit' />
 
