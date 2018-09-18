@@ -15,8 +15,9 @@ export default class Form extends Component {
     render() {
         return(
             <div>
-                <h3>Request a Quote</h3>
-                <div className='formContainer'>
+                <div className='formContainer' id='form'>
+                    <h3>Request a Quote</h3>
+                    <hr />
                     <form>
                         <label>First Name</label>
                         <input type='text' name='firstname' />

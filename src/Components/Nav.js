@@ -7,7 +7,7 @@ const Nav = () => {
                 <li className='logo'>Logo</li>
                 <a href='#portfolio'><li>Portfolio</li></a>
                 <li>Contact</li>
-                <li>Quote</li>
+                <a href='#form'><li>Quote</li></a>
             </ul>
         </nav>
     )
