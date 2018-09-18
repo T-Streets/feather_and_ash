@@ -15,6 +15,7 @@
     "@babel/core": "^7.0.0",
     "@babel/plugin-transform-react-jsx": "^7.0.0",
     "@babel/plugin-transform-react-jsx-self": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-stage-2": "^7.0.0",
@@ -38,6 +39,8 @@
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "axios": "^0.18.0",
     "babel-upgrade": "0.0.23",
     "express": "^4.16.3",
     "react": "^16.4.2",

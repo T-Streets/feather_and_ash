@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 export default class Form extends Component {
     constructor() {
@@ -10,6 +11,7 @@ export default class Form extends Component {
             email: '',
             message: ''
         }
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange = e => {
@@ -18,10 +20,17 @@ export default class Form extends Component {
         })
     }
     
-    handleSubmit = e => {
+    async handleSubmit(e) {
         e.preventDefault()
-
+        
         const { firstName, lastName, email, message } = this.state
+        
+        const form = await axios.post('/api/form', {
+            firstName,
+            lastName,
+            email,
+            message
+        })
     }
 
     render() {

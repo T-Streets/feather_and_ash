@@ -5,6 +5,7 @@
     ],
     "plugins": [
         ["transform-class-properties"],
-        ["@babel/plugin-transform-react-jsx-self"]
+        ["@babel/plugin-transform-react-jsx-self"],
+        ["@babel/plugin-transform-runtime"]
     ]
 }
