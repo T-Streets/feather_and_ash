@@ -25,12 +25,14 @@ export default class Form extends Component {
         
         const { firstName, lastName, email, message } = this.state
         
-        const form = await axios.post('/api/form', {
+        const res = await axios.post(`${API_URL}/form`, {
             firstName,
             lastName,
             email,
             message
         })
+
+        console.log(res.data);
     }
 
     render() {
