@@ -15,11 +15,11 @@ app.post('/api/form', (req, res) => {
         service: 'gmail',
         auth: {
             type: 'OAuth2',
-            user: ,
-            clientId: ,
-            clientSecret: ,
-            refreshToken: ,
-            accessToken: ,
+            user: config.email,
+            clientId: config.googleClientID,
+            clientSecret: config.googleClientSecret,
+            refreshToken: config.googleRefreshToken,
+            accessToken: config.googleAccessToken,
         }
 
     })
