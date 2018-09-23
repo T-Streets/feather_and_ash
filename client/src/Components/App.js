@@ -3,7 +3,7 @@ import Nav from './Nav';
 import Landing from './Landing';
 import About from './About';
 import Portfolio from './Portfolio';
-import Form from './Form';
+import FormContainer from './Contact/FormContainer';
 
 export default class App extends Component {
     constructor() {
@@ -39,7 +39,7 @@ export default class App extends Component {
                 <Landing />
                 <About />
                 <Portfolio />
-                <Form />
+                <FormContainer />
             </div>
         )
     }
