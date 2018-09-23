@@ -44,7 +44,10 @@ export default class FormContainer extends Component {
     render() {
         return (
             <div>
-                {this.state.formVisible ? <Form handleChange={this.handleChange} handleSubmit={this.handleSubmit} /> :
+                {this.state.formVisible 
+                ? 
+                <Form handleChange={this.handleChange} handleSubmit={this.handleSubmit} /> 
+                :
                 <Sent /> }
             
             </div>
