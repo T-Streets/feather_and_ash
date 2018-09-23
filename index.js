@@ -11,31 +11,37 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors());
 
 app.post('/api/form', (req, res) => {
-    let transport = nodemailer.createTransport({
-        service: 'gmail',
+    let transporter = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true,
         auth: {
             type: 'OAuth2',
-            user: config.email,
             clientId: config.googleClientID,
             clientSecret: config.googleClientSecret,
-            refreshToken: config.googleRefreshToken,
-            accessToken: config.googleAccessToken,
         }
 
     })
-
+    
     let mailOptions = {
-        from: `${req.body.firstName}`,
-        to: `${config.email}`,
-        subject: 'new message',
-        text: `${req.body.message}`
+        from: req.body.firstName,
+        to: 'tyler@featherandash.io',
+        subject: `New Message from ${req.body.firstName} - ${req.body.email}`,
+        text: req.body.message,
+        auth: {
+            user: 'tyler@featherandash.io',
+            refreshToken: config.googleRefreshToken,
+            accessToken: config.googleAccessToken
+        }
     }
 
-    transport.sendMail(mailOptions, (err, res) => {
+
+    transporter.sendMail(mailOptions, (err, res) => {
         if(err) {
             console.log(err)
+        } else {
+            console.log('Email Sent!')
         }
-        console.log('Email Sent!')
     }) 
 })
 
