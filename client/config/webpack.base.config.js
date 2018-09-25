@@ -58,6 +58,12 @@ module.exports = {
                 use: [
                     'xml-loader'
                 ]
+            },
+            {
+                test: /\.json$/,
+                use: [
+                    'json-loader'
+                ]
             }
         ]
     },

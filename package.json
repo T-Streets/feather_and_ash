@@ -18,6 +18,12 @@
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "nodemailer": "^4.6.8",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "react-icomoon": "^1.0.0"
+  },
+  "devDependencies": {
+    "icomoon-loader": "^1.0.4",
+    "json-loader": "^0.5.7",
+    "raw-loader": "^0.5.1"
   }
 }

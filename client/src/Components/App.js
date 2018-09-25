@@ -4,6 +4,7 @@ import Landing from './Landing';
 import About from './About';
 import Portfolio from './Portfolio';
 import FormContainer from './Contact/FormContainer';
+import Footer from './Footer';
 
 export default class App extends Component {
     constructor() {
@@ -40,6 +41,7 @@ export default class App extends Component {
                 <About />
                 <Portfolio />
                 <FormContainer />
+                <Footer />
             </div>
         )
     }
