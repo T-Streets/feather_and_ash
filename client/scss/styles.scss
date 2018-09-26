@@ -47,7 +47,7 @@ nav li:hover {
 }
 
 
-.logo {
+.Logo {
     margin-right: auto;
 }
 
@@ -89,6 +89,13 @@ h1 {
 .ampersand {
     font-size: .8em;
     color: $r-color;
+}
+
+.landingLogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%)
 }
 
 .aboutContainer {
