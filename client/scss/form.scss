@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 .formContainer {
     
@@ -37,23 +38,8 @@
     }
 
     input[type='Submit'] {
-        width: 20%;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        display: block;
-        position: relative;
-        background-color: $r-color;
-        color: $main-bg-color;
-        font-size: 20px;
-        font-weight: 300px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-family: $h-font;
-        padding: 10px 30px;
-        margin: 0 auto;
-        border-radius: 15px;
-        box-shadow: 0 6px $r-color-shadow; 
+        width: 25%;
+        @include button;
     }
 
     input[type='Submit']:hover {

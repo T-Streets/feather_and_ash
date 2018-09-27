@@ -1,0 +1,27 @@
+// ==== Positioning ====
+
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+// ==== Buttons ====
+@mixin button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background-color: $r-color;
+    color: $main-bg-color;
+    font-size: 20px;
+    font-weight: 300px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: $h-font;
+    padding: 10px 40px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 6px $r-color-shadow;
+}

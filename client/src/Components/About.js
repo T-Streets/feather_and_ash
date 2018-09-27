@@ -12,6 +12,7 @@ const About = () => {
                 The web is your office, your playground, your voice. <span className='brand'>Feather & Ash Productions</span> will make your voice heard. Click below to request a quote for your idea 
                 waiting to be born!
                  </p>
+                 <br />
                  <a href='#form'><button className='quoteButton'> Request Quote</button></a>
         </div>
 
