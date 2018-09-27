@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'mixins';
+@import 'partials/variables';
+@import 'partials/mixins';
 
 .landingContainer {
     background-image: url('../src/images/feather-transparent.png');
@@ -15,9 +15,8 @@ h1 {
     margin: 0;
     padding: 0;
     text-align: center;
-    @include center;
-    transform: translate(-50%, -150%);
-    font-family: 'Cinzel', serif;
+    @include center(-50%, -150%);
+    font-family: $h-font;
     font-weight: lighter;
 }
 
@@ -26,8 +25,7 @@ h1 {
     margin: 0;
     padding: 0;
     text-align: center;
-    @include center;
-    transform: translate(-50%, -80%);
+    @include center(-50%, -80%);
     font-family: 'Cinzel', serif;
     font-weight: lighter;
 }
@@ -38,6 +36,5 @@ h1 {
 }
 
 .landingLogo {
-    @include center;
-    transform: translate(-50%)
+    @include center(-50%, 0);
 }
