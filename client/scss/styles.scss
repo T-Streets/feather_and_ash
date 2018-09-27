@@ -1,12 +1,11 @@
 @import 'partials/variables';
-
+@import 'partials/mixins';
 
 body {
     background-color: $main-bg-color;
     color: black;
     padding: 0;
     margin: 0;
-
 }
 
 
