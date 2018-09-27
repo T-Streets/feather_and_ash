@@ -3,6 +3,7 @@ import OG from '../images/omensgroup.png';
 import EventVenue from '../images/eventvenuela.png';
 import Goddess from '../images/goddessNest.png';
 import Sacred from '../images/sacredstone.png';
+import '../../scss/portfolio.scss';
 
 const Portfolio = () => {
     return (

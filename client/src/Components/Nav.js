@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../images/FA-logo-black.png'
+import '../../scss/nav.scss';
 
 const Nav = () => {
     return (

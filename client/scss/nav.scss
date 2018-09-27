@@ -1,0 +1,39 @@
+@import 'variables';
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    background: $nav-color;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    z-index: 99999;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    color: crimson;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+}
+
+nav li:hover {
+    color: black;
+}

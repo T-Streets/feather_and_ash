@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../images/FA-logo-black.png';
+import '../../scss/landing.scss';
 
 const Landing = () => {
     return (

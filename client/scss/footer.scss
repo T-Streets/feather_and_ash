@@ -1,0 +1,30 @@
+@import 'variables';
+
+.footer {
+    width: 100%;
+    height: 120px;
+    margin-top: 100px;
+    background-color: $r-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .iconMail {
+        padding-right: 40px;
+        font-size: 40px;
+    }
+
+    .iconMail:hover {
+        color: black;
+        cursor: pointer;
+    }
+
+    .iconGit {
+        font-size: 40px;
+    }
+    
+    .iconGit:hover {
+        color: black;
+        cursor: pointer;
+    }
+}

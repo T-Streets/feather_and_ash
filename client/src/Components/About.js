@@ -1,4 +1,6 @@
 import React from 'react';
+import '../../scss/about.scss';
+
 const About = () => {
     return (
         <div className='aboutContainer'>

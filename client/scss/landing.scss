@@ -1,0 +1,48 @@
+@import 'variables';
+
+.landingContainer {
+    background-image: url('../src/images/feather-transparent.png');
+    widows: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 500px;
+}
+
+h1 {
+    font-size: 5em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    font-family: 'Cinzel', serif;
+    font-weight: lighter;
+}
+
+.title {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    font-family: 'Cinzel', serif;
+    font-weight: lighter;
+}
+
+.ampersand {
+    font-size: .8em;
+    color: $r-color;
+}
+
+.landingLogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%)
+}
