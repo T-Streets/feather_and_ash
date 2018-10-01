@@ -2,7 +2,6 @@
 @import 'partials/mixins';
 
 .formContainer {
-    
     h3 {
         text-align: center;
         font-family: $h-font;
@@ -50,5 +49,15 @@
     input[type='Submit']:active {
         box-shadow: none;
         top: 6px; 
+    }
+}
+
+
+// ==== Media Queries ====
+@include tablet {
+    .formContainer{
+        input[type='Submit'] {
+            width: 45%;
+        }
     }
 }

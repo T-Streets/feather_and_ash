@@ -3,44 +3,67 @@
 
 .landingContainer {
     background-image: url('../src/images/feather-transparent.png');
-    widows: 100%;
+    width: 100%;
+    max-width: 1500px;
     height: 350px;
+    margin-left: auto;
+    margin-right: auto;
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 500px;
 
-    @media screen and (max-width: 1000px){
-        background-image {
-            width: 100%;
+    h1 {
+        font-size: 5em;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        @include center(-50%, -150%);
+        font-family: $h-font;
+        font-weight: lighter;
+    }
+    
+    .title {
+        font-size: 3em;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        @include center(-50%, -80%);
+        font-family: 'Cinzel', serif;
+        font-weight: lighter;
+    }
+    
+    .ampersand {
+        font-size: .8em;
+        color: $r-color;
+    }
+    
+    .landingLogo {
+        @include center(-50%, 0);
+    }
+
+    @media screen and(max-width: 1130) {
+        h1 {
+            color: red;
+            font-size: 2em;
+            margin-top: 500px;
+            @include center(-50%, -50%);
         }
     }
 }
 
-h1 {
-    font-size: 5em;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    @include center(-50%, -150%);
-    font-family: $h-font;
-    font-weight: lighter;
-}
+// ==== Media Queries ====
+@include tablet {
+    .landingContainer {
+        height: 200px;
+        
+        h1 {
+            font-size: 3em;
+            @include center(-50%, -150%);
+        }
 
-.title {
-    font-size: 3em;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    @include center(-50%, -80%);
-    font-family: 'Cinzel', serif;
-    font-weight: lighter;
-}
+        .title {
+            font-size: 2em;
+        }
 
-.ampersand {
-    font-size: .8em;
-    color: $r-color;
-}
-
-.landingLogo {
-    @include center(-50%, 0);
+    }
 }

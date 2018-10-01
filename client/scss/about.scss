@@ -43,3 +43,10 @@
         top: 6px;
     }
 }
+
+// ==== Media Queries ====
+@include tablet {
+    .aboutContainer {
+        height: 500px;
+    }
+}
