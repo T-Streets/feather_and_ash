@@ -38,7 +38,7 @@
 
     input[type='Submit'] {
         width: 25%;
-        @include button;
+        @include button(10px, 40px);
     }
 
     input[type='Submit']:hover {

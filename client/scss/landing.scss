@@ -40,22 +40,13 @@
     .landingLogo {
         @include center(-50%, 0);
     }
-
-    @media screen and(max-width: 1130) {
-        h1 {
-            color: red;
-            font-size: 2em;
-            margin-top: 500px;
-            @include center(-50%, -50%);
-        }
-    }
 }
 
 // ==== Media Queries ====
 @include tablet {
     .landingContainer {
         height: 200px;
-        
+
         h1 {
             font-size: 3em;
             @include center(-50%, -150%);
@@ -65,5 +56,19 @@
             font-size: 2em;
         }
 
+    }
+}
+
+@include mobile {
+    .landingContainer {
+        height: 150px;
+
+        h1 {
+            @include center(-50%, -90%); 
+        }
+        .title {
+            @include center(-50%, 60%);
+            padding-left: 15px;
+        }
     }
 }

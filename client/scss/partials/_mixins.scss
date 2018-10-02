@@ -7,7 +7,7 @@
 }
 
 // ==== Buttons ====
-@mixin button {
+@mixin button($pad1, $pad2) {
     outline: none;
     border: none;
     cursor: pointer;
@@ -20,7 +20,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: $h-font;
-    padding: 10px 40px;
+    padding: $pad1 $pad2;
     margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0 6px $r-color-shadow;
@@ -33,3 +33,9 @@
         @content
     }
 };
+
+@mixin mobile() {
+    @media screen and (max-width: 425px) {
+        @content
+    }
+}
