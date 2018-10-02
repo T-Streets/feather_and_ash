@@ -1,0 +1,15 @@
+@import 'partials/variables';
+@import 'partials/mixins';
+
+h3 {
+    font-size: 2em;
+    font-family: $nav-font;
+    text-align: center;
+}
+
+// ==== Media Query ====
+@include mobile {
+    h3 {
+        padding-left: 10px;
+    }
+}
