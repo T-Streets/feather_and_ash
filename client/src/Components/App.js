@@ -20,6 +20,9 @@ export default class App extends Component {
         }
     }
 
+    /**
+     * Toggles nav to visible when user scrolls
+     */
     componentDidMount = () => {
         window.addEventListener('scroll', this.handleScroll)
     }

@@ -10,6 +10,9 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors());
 
+/**
+ * Handles route on form submit to send message to gmail account
+ */
 app.post('/api/form', (req, res) => {
     let transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
@@ -22,7 +25,10 @@ app.post('/api/form', (req, res) => {
         }
 
     })
-    
+
+    /**
+     * Creates message parameter to be sent to gmail
+     */
     let mailOptions = {
         from: req.body.firstName,
         to: 'tyler@featherandash.io',
