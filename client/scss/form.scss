@@ -61,3 +61,11 @@
         }
     }
 }
+
+@include mobile {
+    .formContainer {
+        input[type='Submit'] {
+            width: 70%;
+        }
+    }
+}
