@@ -37,8 +37,10 @@
         color: $r-color;
     }
     
-    .landingLogo {
-        @include center(-50%, 0);
+    .logo {
+        @include center(-50%, 40%);
+        width: 200px;
+        height: auto;
     }
 }
 
@@ -69,6 +71,12 @@
         .title {
             @include center(-50%, 60%);
             padding-left: 15px;
+        }
+
+        .logo {
+            width: 130px;
+            height: auto;
+            @include center(-50%, 130%);
         }
     }
 }
