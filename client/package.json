@@ -4,6 +4,10 @@
   "proxy": "http://localhost:3000",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "8.11.2",
+    "npm": "6.4.1"
+  },
   "scripts": {
     "start:dev": "webpack-dev-server --mode development --config config/webpack.base.config.js --open --hot --history-api-fallback",
     "prestart:prod": "webpack --mode production --config config/webpack.prod.config.js --env.NODE_ENV=production --progress",
