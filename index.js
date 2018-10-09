@@ -10,6 +10,12 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors());
 
+const path = __dirname 
+
+app.get('/', (req,res) => {
+    res.sendFile(path + '/index.html')
+})
+
 /**
  * Handles route on form submit to send message to gmail account
  */
