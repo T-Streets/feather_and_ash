@@ -7,7 +7,7 @@ const app = express();
 //Point static path to dist
 app.use(express.static(path.join(__dirname, '..', 'dist')));
 
-const routes = require('./routes');
+const routes = require('../routes');
 
 app.use('/', routes);
 
