@@ -5,11 +5,11 @@ import About from './About';
 import Portfolio from './Portfolio';
 import FormContainer from './Contact/FormContainer';
 import Footer from './Footer';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { fab, faGithub } from '@fortawesome/free-brands-svg-icons';
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-library.add(fab, faEnvelope, faGithub);
+// library.add(fab, faEnvelope, faGithub);
 
 export default class App extends Component {
     constructor() {

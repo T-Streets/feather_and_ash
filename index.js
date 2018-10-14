@@ -9,11 +9,16 @@ const app = express();
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors());
+app.use(express.static('dist'))
 
 const path = __dirname 
 
 app.get('/', (req,res) => {
-    res.sendFile(path + '/index.html')
+    res.sendFile(path + '/dist/index.html')
+})
+
+app.get('*', (req, res) => {
+    res.redirect('/')
 })
 
 /**

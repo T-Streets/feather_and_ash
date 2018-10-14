@@ -8,11 +8,11 @@
     "npm": "6.4.1"
   },
   "scripts": {
-    "start": "npm run start:dev --prefix client",
+    "start": "node index.js",
     "server": "nodemon index.js",
-    "client": "npm run start:dev --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "cd client && npm install && npm run start:dev --prefix client"
+    "heroku-postbuild": "npm i && npm run build",
+    "build": "webpack --config ./config/webpack.base.config.js"
   },
   "keywords": [],
   "author": "",
@@ -28,11 +28,42 @@
     "express": "^4.16.3",
     "nodemailer": "^4.6.8",
     "nodemon": "^1.18.4",
-    "react-icomoon": "^1.0.0"
+    "react-icomoon": "^1.0.0",
+    "@babel/runtime": "^7.0.0",
+    "axios": "^0.18.0",
+    "babel-upgrade": "0.0.23",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
   },
   "devDependencies": {
     "icomoon-loader": "^1.0.4",
     "json-loader": "^0.5.7",
-    "raw-loader": "^0.5.1"
+    "raw-loader": "^0.5.1",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-react-jsx": "^7.0.0",
+    "@babel/plugin-transform-react-jsx-self": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-stage-2": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "csv-loader": "^3.0.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.0.7",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.9.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7",
+    "webpack-merge": "^4.1.4",
+    "xml-loader": "^1.2.1"
   }
 }

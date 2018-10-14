@@ -9,7 +9,17 @@ const API_URL = {
 
 const environment = process.env.NODE_ENV === 'production' ? 'production' : 'development'
 
+const path = require('path')
+
 module.exports = {
+    entry: './src/index.js',
+
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, '../dist'),
+        publicPath: '/',
+    },
+
     module: {
         rules: [
             {
