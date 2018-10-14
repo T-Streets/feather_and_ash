@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Form from './Form';
-import Sent from './Sent'
+import Sent from './Sent';
 import '../../../scss/form.scss';
 
 export default class FormContainer extends Component {
